@@ -44,5 +44,7 @@ export function getTicketPrice(age, isWeekend) {
     price += 3;
   }
 
+  // console.log(price);
+  
   return price;
 }
