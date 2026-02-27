@@ -23,4 +23,17 @@
  */
 export function getTrafficAction(color) {
   // Your code here
+  let colorStr = color.toLowerCase();
+
+  if (colorStr == "green") {
+    return "GO";
+  } else if (colorStr == "red") {
+    return "STOP";
+  } else if (colorStr == "yellow") {
+    return "SLOW DOWN";
+  } else if (colorStr == "flashing red") {
+    return "STOP AND PROCEED WITH CAUTION";
+  } else {
+    return "INVALID SIGNAL";
+  }
 }
